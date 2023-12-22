@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Carrito de Compras</title>
+  
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+  <header>
+    <h1>Carrito de Compras</h1>
+    <input type="text" id="searchInput" placeholder="Buscar producto">
+  </header>
+
+  <div class="products">
+    
+    <div class="product">
+      <h2>fontina</h2>
+      <p>Precio: $50</p>
+      <button onclick="agregarAlCarrito('Producto 1', 50)">Agregar al carrito</button>
+    </div>
+
+    <div class="product">
+      <h2>holanda</h2>
+      <p>Precio: $30</p>
+      <button onclick="agregarAlCarrito('Producto 2', 30)">Agregar al carrito</button>
+    </div>
+    
+  </div>
+
+  <div class="cart">
+    <h2>Carrito de compras</h2>
+    <ul id="carrito"></ul>
+    <p>Total: <span id="total">0</span></p>
+    <button onclick="realizarCompra()">Realizar Compra</button>
+  </div>
+
